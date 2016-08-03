@@ -1,11 +1,11 @@
 # Ember Task List
 
 This is a Task List app. 
-1. You can add new task with multiple durations.
-2. View task list and edit task. 
-3. Mark task as completed.
-4. The app also shows all the task in calendar view.
-5. Ember Mirage is integrated.
+* You can add new task with multiple durations.
+* View task list and edit task. 
+* Mark task as completed.
+* The app also shows all the task in calendar view.
+* Ember Mirage is integrated.
 
 ## Prerequisites
 
