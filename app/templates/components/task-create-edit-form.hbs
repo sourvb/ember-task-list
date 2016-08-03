@@ -1,0 +1,20 @@
+<form {{action "submitForm" on="submit"}}>
+	<div class="form-group">
+		<label for="">Task Title</label>
+		{{input type="text" class="form-control" name="title" id="title" value=content.title}}
+	</div>
+	<div class="checkbox">
+		<label>
+		{{input type="checkbox" name="completed" id="completed" checked=content.completed}} Mark completed
+		</label>
+	</div>
+	<br>
+	<div class="form-group">
+		<label for="">Task Timing (YYYY-MM-DD HH:MM APM)</label>
+		{{datetime-range durations=content.durations}}
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary">Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
+		{{#link-to 'tasks' class="btn btn-default"}}Cancel{{/link-to}}
+	</div>
+</form>

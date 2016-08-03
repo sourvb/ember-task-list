@@ -1,0 +1,15 @@
+<section class='taskslistapp'>
+  <header>
+  	<div class="row">
+		<div class="col-sm-6">
+			{{#link-to 'dashboard' class="btn btn-default pull-left"}}Dashboard{{/link-to}}
+		</div>
+		<div class="col-sm-6">
+			{{#link-to 'tasks' class="btn btn-default pull-right"}}Task List{{/link-to}}
+		</div>
+	</div>  
+  </header>
+  <section class='main'>
+    {{outlet}}
+  </section>
+</section>

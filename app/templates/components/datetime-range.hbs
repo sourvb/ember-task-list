@@ -1,0 +1,17 @@
+{{#each durations as |duration|}}
+	<li class="row">
+		<div class="col-sm-10">
+	    	{{input id=(concat "durationfrom-" duration.id) name=(concat "durationfrom-" duration.id) class="form-control datetimepicker" placeholder="Select the duration of task" value=(concat duration.startdate " - " duration.enddate)}}
+		</div>
+		{{#if (eq duration durations.lastObject)}}
+			<div class="col-sm-2">
+		    	<button class="btn btn-default" {{action "addDuration"}}><span class="glyphicon glyphicon-plus"></span></button>
+		    	{{#unless (eq duration durations.firstObject)}}
+		    	<button class="btn btn-default" {{action "removeDuration" duration}}><span class="glyphicon glyphicon-minus"></span></button>
+		    	{{/unless}}
+			</div>
+		{{/if}}
+	</li>
+	<br>
+{{/each}}
+		

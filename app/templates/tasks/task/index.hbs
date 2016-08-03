@@ -1,0 +1,11 @@
+{{#link-to 'tasks' class="btn btn-default"}}<span class="glyphicon glyphicon-arrow-left"></span>{{/link-to}}&nbsp;&nbsp;&nbsp;{{#link-to 'tasks.task.edit' model.id class="btn btn-default"}}Edit task{{/link-to}}<br><br>
+<h4>ID: {{model.id}}</h4>
+<h4>Title: {{model.title}}</h4>
+<h4>Completed:
+	{{#if model.completed}}
+		<span class="glyphicon glyphicon-ok" style="color:#5cb85c;"></span>
+	{{else}}
+		<span class="glyphicon glyphicon-remove" style="color:#d9534f;"></span>
+	{{/if}}
+</h4>
+

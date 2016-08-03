@@ -1,0 +1,134 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ul li {
+	list-style: none;
+	padding: 0;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	color: inherit;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+body {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #f5f5f5 url("/assets/bg.png");
+	color: #4d4d4d;
+	width: 900px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-weight: 300;
+}
+
+button,
+input[type="checkbox"] {
+	outline: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.taskslistapp {
+	background: #fff;
+	margin: 60px 0 40px 0;
+	position: relative;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+	            0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.taskslistapp input::-webkit-input-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #e6e6e6;
+}
+
+.taskslistapp input::-moz-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #e6e6e6;
+}
+
+.taskslistapp input::input-placeholder {
+	font-style: italic;
+	font-weight: 300;
+	color: #e6e6e6;
+}
+
+.taskslistapp h1 {
+	text-align: left;
+	width: 100%;
+	font-size: 60px;
+	font-weight: 200;
+	margin: 0;
+	text-align: left;
+	color: rgba(175, 47, 47, 0.15);
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+.main {
+	position: relative;
+	z-index: 2;
+	border-top: 1px solid #e6e6e6;
+	padding: 50px;
+}
+
+.tasks-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.tasks-list li {
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px solid #ededed;
+}
+
+.tasks-list li:last-child {
+	border-bottom: none;
+}
+
+.tasks-list li label a {
+	white-space: normal;
+	word-break: break-word;
+	padding: 15px 0px;
+	display: block;
+	line-height: 1.2;
+	transition: color 0.4s;
+	text-decoration: none;
+	color: #555;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.tasks-list li.completed label a {
+	color: #CCC;
+	text-decoration: line-through;
+}
+

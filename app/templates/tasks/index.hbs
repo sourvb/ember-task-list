@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-sm-6">
+		<h2>Task List</h2>
+	</div>
+	<div class="col-sm-6">
+		{{#link-to 'tasks.new' class="btn btn-default pull-right"}}Add new task{{/link-to}}
+	</div>
+</div>
+<ul class="tasks-list">
+{{#each model as |task|}}
+    <li class="{{if task.completed 'completed' ''}}"><label>{{#link-to 'tasks.task' task.id}}{{task.title}}{{/link-to}}</label></li>
+{{/each}}
+</ul>
